@@ -42,13 +42,17 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public int withdraw(int value) {
+	public void withdraw(int value) {
 		if (value > this.balance) {
+			
+		} else if(value%10 != 0) {
 			throw new ArithmeticException();
-		} else {
+		}
+		
+		else {
 			this.balance = balance - value;
 		}
-		return this.balance;
+		
 
 	}
 
