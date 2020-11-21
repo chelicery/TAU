@@ -1,20 +1,27 @@
-1604837305112	geckodriver	INFO	Listening on 127.0.0.1:52480
-1604837308550	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jonas\\AppData\\Local\\Temp\\rust_mozprofilehJfJHg"
+1605981661565	geckodriver	INFO	Listening on 127.0.0.1:53754
+1605981664583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jonas\\AppData\\Local\\Temp\\rust_mozprofile7Krpx5"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1604837310489	Marionette	INFO	Listening on port 52491
-1604837310624	Marionette	WARN	TLS certificate errors will be ignored for this session
-1604837332388	Marionette	INFO	Stopped listening on port 52491
+1605981666317	Marionette	INFO	Listening on port 53762
+1605981666626	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.kurnik.pl"
+1605981721375	Marionette	INFO	Stopped listening on port 53762
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-1604845899811	geckodriver	INFO	Listening on 127.0.0.1:56250
-1604845903291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jonas\\AppData\\Local\\Temp\\rust_mozprofilehQ8Gbl"
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+ayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1605981636172	Marionette	INFO	Stopped listening on port 53601
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+or("", "(unknown module)"))
 1604845905132	Marionette	INFO	Listening on port 56261
 1604845905372	Marionette	WARN	TLS certificate errors will be ignored for this session
 1604845919128	Marionette	INFO	Stopped listening on port 56261

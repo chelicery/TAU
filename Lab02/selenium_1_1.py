@@ -5,6 +5,9 @@ from selenium import webdriver
 
 logger = logging.getLogger('simple_example')
 logger.setLevel(logging.INFO)
+logging.basicConfig(filename="selenium_1_1.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='w')
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -14,15 +17,15 @@ logger.addHandler(ch)
 driver = webdriver.Edge(executable_path='E:\downloads\edgedriver_win64\msedgedriver.exe')
 # driverFirefox = webdriver.Firefox(executable_path='E:\downloads\geckodriver-v0.28.0-win64\geckodriver.exe')
 # driverChrome = webdriver.Chrome(executable_path='E:\downloads\chromedriver_win32\chromedriver.exe')
-logger.info('Przechodzę na stronę kurnik')
+logger.info('Przechodze na strone kurnik')
 driver.get('https://www.kurnik.pl/')
 
 temp = driver.find_element_by_partial_link_text('zaloguj')
-logger.info('Przechodzę na stronę logowania')
+logger.info('Przechodze na strone logowania')
 temp.click()
 
 temp = driver.find_element_by_xpath("//a[@class='lbut bxpad ttup']")
-logger.info('Przechodzę na stronę rejestracji')
+logger.info('Przechodze na strone rejestracji')
 temp.click()
 
 profilName = 'tau1234pj'
