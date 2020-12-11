@@ -21,6 +21,8 @@ public class AccountTest {
 	@After
 	public void tearDown() {
 		acc = null;
+		File f = new File("receipt1.pdf");	
+		f.delete();	
 	}
 	
 	
@@ -96,20 +98,43 @@ public class AccountTest {
         assertEquals(1,result);
     }
 
-//	@Test	
-//	 public void pdfTest() throws IOException{
-//		PDDocument pdf = PDDocument.load(content);
-//	    PDFTextStripper stripper = new PDFTextStripper();
-//	    stripper.setAddMoreFormatting(true);
-//	    stripper.setSortByPosition(true);
-//	    stripper.setStartPage(0);
-//	    stripper.setEndPage(pdf.getNumberOfPages());
-//	    String plainText = stripper.getText(pdf);
-//	    pdf.close();
-//
-//	    assertThat(plainText).isEqualTo(expected);
-//    }
-//    
+	@Test	
+	 public void pdf_create_file_test() throws IOException{
+		acc.generateReceipt(200, 200);
+		File f = new File("receipt1.pdf");			
+		boolean result = false;		
+        if (f.exists()) 
+            result = true; 
+        else
+            result = false; 
+		
+	    assertTrue(result);
+    }
+	
+	@Test	
+	 public void pdf_created_file_name_test() throws IOException{
+		acc.generateReceipt(200, 200);
+		int id = acc.getReceiptId();
+		File f = new File("receipt"+id+".pdf");			
+		boolean result = false;		
+       if (f.exists()) 
+           result = true; 
+       else
+           result = false; 		
+	    assertTrue(result);
+   }
+	@Test	
+	 public void pdf_delete_file_test() throws IOException{
+		File f = new File("receipt1.pdf");	
+		f.delete();		
+	   boolean result = true;		
+       if (f.exists()) 
+           result = true; 
+       else
+           result = false;   		
+       assertFalse(result);
+   }
+	
     
     
 	
