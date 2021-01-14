@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+E:\PJWSTK\workspace-eclipse\ATMmachine\Lab05\.metadata\.plugins\org.eclipse.jdt.core
+380739999.index
