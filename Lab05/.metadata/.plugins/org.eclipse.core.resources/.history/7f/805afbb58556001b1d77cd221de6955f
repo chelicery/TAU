@@ -1,0 +1,29 @@
+import static org.junit.Assert.*;
+import org.junit.*;
+import org.mockito.*;
+
+public class MockitoTest {
+	Account  account;
+	@Before
+	public void setUp() {
+		account = mock(Account.class);
+		
+	}
+	
+	@After
+	public void tearDown() {
+		account = null;
+	}
+
+	
+	@Test
+	public void test_mockito_transactionId() {
+		when(account.getTransactionId()).thenReturn(202221);
+	int id = account.getTransactionId();
+	assertEquals(202221, id);
+		
+	}
+
+
+
+}

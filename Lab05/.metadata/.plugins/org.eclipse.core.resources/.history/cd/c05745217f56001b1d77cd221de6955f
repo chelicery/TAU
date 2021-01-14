@@ -1,0 +1,19 @@
+import static org.mockito.Mockito.mock;
+
+public class MockitoTest {
+	Parser parser;
+	@Before
+	public void setUp() {
+		parser = new Parser();	
+	}
+	
+	@After
+	public void tearDown() {
+		parser = null;
+	}
+
+
+
+
+
+}

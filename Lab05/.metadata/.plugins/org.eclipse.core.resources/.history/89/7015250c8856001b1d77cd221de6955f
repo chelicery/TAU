@@ -1,0 +1,50 @@
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import org.junit.*;
+import org.junit.Assert.*;
+import org.mockito.Mock;
+
+public class MockitoTest {
+	Account  account;
+	@Before
+	public void setUp() {
+		account = mock(Account.class);
+		
+	}
+	
+	@After
+	public void tearDown() {
+		account = null;
+	}
+
+	
+	@Test
+	public void test_mockito_Account_transactionId() {
+		when(account.getTransactionId()).thenReturn(202221);
+	int id = account.getTransactionId();
+	assertEquals(id, 202221);
+		
+	}
+	
+	@Test
+	public void test_mockito_Account_currency() {
+		when(account.getCurrency()).thenReturn("EUR");
+	String currency = account.getCurrency();
+	assertEquals(currency, "EUR");
+		
+	}
+	
+	@Test
+	public void test_mockito_Account_User1() {
+		User u = new User();
+		when(account.getUserTransactionId()).thenReturn(202221);
+	int id = account.getTransactionId();
+	assertEquals(id, 202221);
+		
+	}
+	
+
+
+}
+

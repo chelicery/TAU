@@ -1,0 +1,20 @@
+import org.mockito.Mock;
+
+public class MockitoTest {
+	Parser parser;
+	@Before
+	public void setUp() {
+		Account account = mock(Account.class);
+		@Mock Address shippingAddress;
+	}
+	
+	@After
+	public void tearDown() {
+		parser = null;
+	}
+
+	 
+	
+
+
+}

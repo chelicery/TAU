@@ -1,0 +1,18 @@
+<currencies>
+    <currency id="curr0001">
+        <targetCurrency>EUR</targetCurrency>
+        <rate>4.42</rate>        
+    </currency>
+    <currency id="curr0002">
+        <targetCurrency>GBP</targetCurrency>
+        <rate>4.89</rate>        
+    </currency>
+    <currency id="curr0003">
+        <targetCurrency>CHF</targetCurrency>
+        <rate>4.11</rate>        
+    </currency>
+    <currency id="curr0001">
+        <targetCurrency>USD</targetCurrency>
+        <rate>3.65</rate>        
+    </currency>
+</currencies>
