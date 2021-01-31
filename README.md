@@ -1,10 +1,10 @@
-# Lab 5 - Testing framework Ruby Test::Unit
+# Lab 6 - Testing frameworks, example based on Ruby Test::Unit
 
 
 ## About
 test-unit is a xUnit family unit testing framework for Ruby. 
 
-Test::Unit provides a complete testing suite for your needs - supporting TDD, BDD, mocking, and benchmarking.
+Test::Unit provides a complex and easy to use testing suite.
 
 ## Features
 
