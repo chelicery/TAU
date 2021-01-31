@@ -8,8 +8,7 @@ Test::Unit provides a complete testing suite for your needs - supporting TDD, BD
 
 ## Features
 
-  - test-unit the original test-unit, taken from the Ruby distribution. It is being distributed as a gem to allow tool builders to use it as a stand-alone package. (The test framework in ruby is going to radically change very soon).
-  - test-unit will be improved actively and may break compatiblity with test-unit 1.2.3. (We will not hope it if it isn’t needed.)
+  - test-unit, it is standard ruby library what means it is included in Ruby language, it is beeing distributed as a gem also.
   - Some features exist as separated gems like GUI test runner. (Tk, GTK+ and Fox) test-unit-full gem package provides for installing all test-unit related gems easily.
 
 ## Setup
